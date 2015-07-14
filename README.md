@@ -26,22 +26,18 @@ ROOT TFile
 - TH1D MC_MPF_Zone1Q_uds
 - TH1D MC_MPF_Zone1Q_c
 - TH1D MC_MPF_Zone1Q_b
-- TH1D MC_MPF_Zone1Q_undef
 - TH1D MC_MPF_Zone2G
 - TH1D MC_MPF_Zone2G_uds
 - TH1D MC_MPF_Zone2G_c
 - TH1D MC_MPF_Zone2G_b
-- TH1D MC_MPF_Zone2G_undef 
 - TH1D MC_MPF_Zone3C
 - TH1D MC_MPF_Zone3C_uds
 - TH1D MC_MPF_Zone3C_c
 - TH1D MC_MPF_Zone3C_b
-- TH1D MC_MPF_Zone3C_undef 
 - TH1D MC_MPF_Zone4B
 - TH1D MC_MPF_Zone4B_uds
 - TH1D MC_MPF_Zone4B_c
 - TH1D MC_MPF_Zone4B_b
-- TH1D MC_MPF_Zone4B_undef
 ```
 
 #### Data ####
