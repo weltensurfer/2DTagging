@@ -52,6 +52,6 @@ ROOT TFile
 ### Example ###
 
 ```
-./tagging.py --mc examples/ZJet_mc_2015-07-14.root --data examples/ZJet_data_2015-07-14.root
+./tagging.py --mc examples/ZJet_mc2012_2015-07-14.root --data examples/ZJet_data2012_2015-07-14.root
 
 ```
