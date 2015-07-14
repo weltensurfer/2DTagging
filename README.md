@@ -1,7 +1,8 @@
-# 2DTagging #
+# Flavour Response #
 
 ## Introduction ##
-
+This Repository contains standalone tools for flavour response studies.
+Currently this includes the matrix inversion of the 2DTagging method.
 
 ## Dependencies ##
 
@@ -11,14 +12,14 @@
 ### Python ###
 The entire code is written in **python**, specifically for the `python2` LTS version `2.7`.
 
-#### RHEL6/SL6 ####
-`python2.7` is available from the `scl_python27` repository.
+## 2DTagging Method ##
 
-## Input Format ##
+### Input Format ###
 
 The input format are separate root files for monte carlo and data containing all required histogramms.  
+Required histogramms are MPF response plots including all flavours and for each flavour in a tagging zone.  
 
-### Monte Carlo ###
+#### Monte Carlo ####
 ```
 ROOT TFile
 - TH1D MC_MPF_Zone1Q
@@ -43,7 +44,7 @@ ROOT TFile
 - TH1D MC_MPF_Zone4B_undef
 ```
 
-### Data ###
+#### Data ####
 ```
 ROOT TFile
 - TH1D Data_MPF_Zone1Q
@@ -52,9 +53,9 @@ ROOT TFile
 - TH1D Data_MPF_Zone4B
 ```
 
-## Example ##
+### Example ###
 
 ```
-./tagging.py --mc data/ZJet_mc_2015-07-14.root --data data/ZJet_data_2015-07-14.root
+./tagging.py --mc examples/ZJet_mc_2015-07-14.root --data examples/ZJet_data_2015-07-14.root
 
 ```
