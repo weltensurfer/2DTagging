@@ -13,9 +13,9 @@ Currently this includes the matrix inversion of the 2DTagging method.
 The entire code is written in **python**, specifically for the `python2` LTS version `2.7`.
 
 ## 2DTagging Method ##
+This tool extracts the MC-Truth flavour composition and the MPF response in each zone from the input histogramms and determine the jet response for each flavour (uds, c, b and gluon) using the matrix inversion.
 
 ### Input Format ###
-
 The input format are separate root files for monte carlo and data containing all required histogramms.  
 Required histogramms are MPF response plots including all flavours and for each flavour in a tagging zone.  
 
