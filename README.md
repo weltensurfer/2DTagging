@@ -55,6 +55,6 @@ ROOT TFile
 ## Example ##
 
 ```
-./tagging.py --mc mc.root --data data.root
+./tagging.py --mc data/ZJet_mc_2015-07-14.root --data data/ZJet_data_2015-07-14.root
 
 ```
