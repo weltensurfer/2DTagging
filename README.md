@@ -8,6 +8,7 @@ Currently this includes the matrix inversion of the 2DTagging method.
 
 * `Python`
 	* `pyroot` for accessing root files
+	* `numpy` for calculations
 
 ### Python ###
 The entire code is written in **python**, specifically for the `python2` LTS version `2.7`.
