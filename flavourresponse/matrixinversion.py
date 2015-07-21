@@ -4,6 +4,7 @@ import numpy as np
 
 class MatrixInversion:
 	"""
+	This class handles all steps necessary to perform the matrix inversion method.
 
 	:type zones: list[str]
 	:type flavours: list[str]
