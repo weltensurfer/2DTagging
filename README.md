@@ -1,16 +1,17 @@
 # Flavour Response #
 
 ## Introduction ##
-This Repository contains standalone tools for CMS flavour response studies.
+This Repository contains standalone tools for flavour response studies.
 Currently this includes the matrix inversion of the 2DTagging method.
 
-More information can be found at the corresponding [twiki page](https://twiki.cern.ch/twiki/bin/viewauth/CMS/JESFlavorStudies "JES Flavour twiki")
+More information can be found at the corresponding [CMS twiki page](https://twiki.cern.ch/twiki/bin/viewauth/CMS/JESFlavorStudies "JES Flavour twiki").
 
 ## Dependencies ##
 The entire code is written in **python**, specifically for the `python2` LTS version `2.7`.
-* Needed python packages:
-	* `pyroot` for handling root files and histograms
-	* `numpy` for calculations
+
+Needed python packages:
+* `pyroot` for handling root files and histograms
+* `numpy` for calculations
 
 ## 2DTagging Method ##
 This tool extracts the MC-Truth flavour composition and the MPF response in each zone from the input histogramms and determines the jet response for each flavour (uds, c, b and gluon) using the matrix inversion.
@@ -55,8 +56,8 @@ ROOT TFile
 ```
 
 ### Example Usage ###
-Execute the `tagging.py` script with the data and MC files as argument:
+Execute the `tagging.py` script with the Data and MC files as argument:
 ```
-`./tagging.py --mc examples/ZJet_mc2012_2015-07-14.root --data examples/ZJet_data2012_2015-07-14.root`
+./tagging.py --mc examples/ZJet_mc2012_2015-07-14.root --data examples/ZJet_data2012_2015-07-14.root
 
 ```
