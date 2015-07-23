@@ -19,7 +19,7 @@ class MatrixInversion:
 		"""Initialization
 
 		:param plots: Histogramms required for the matrix inversion
-		:type plots: ROOT.TH1
+		:type plots: dict[ROOT.TH1]
 		:param print_results: Print the results of the matrix inversion
 		:type print_results: bool
 		:rtype: void
