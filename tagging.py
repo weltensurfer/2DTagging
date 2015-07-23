@@ -10,17 +10,17 @@ from flavourresponse.matrixinversion import MatrixInversion
 
 
 def print_responses(entrys, type_label):
-	print "+----------+---------------+---------------+"
-	print "|%-10s|%-15s|%-15s|" % (type_label, "MC", "Data")
-	print "+----------+---------------+---------------+"
+	print "+----------+----------------+----------------+"
+	print "|%-10s|%-16s|%-16s|" % (type_label, "MC", "Data")
+	print "+----------+----------------+----------------+"
 	for entry in entrys:
-		mc_response = u" %.3f \u00B1 %.3f" % (round(entry['mc'], 3), round(entry['mc_err'], 3))
+		mc_response = " %.3f +- %.3f" % (round(entry['mc'], 3), round(entry['mc_err'], 3))
 		if entry['data'] is None or entry['data_err'] is None:
 			data_response = ""
 		else:
-			data_response = u" %.3f \u00B1 %.3f" % (round(entry['data'], 3), round(entry['data_err'], 3))
-		print u"|%-10s|%-15s|%-15s|" % (entry['type'], mc_response, data_response)
-	print "+----------+---------------+---------------+"
+			data_response = " %.3f +- %.3f" % (round(entry['data'], 3), round(entry['data_err'], 3))
+		print u"|%-10s|%-16s|%-16s|" % (entry['type'], mc_response, data_response)
+	print "+----------+----------------+----------------+"
 
 def main():
 	"""Read input histograms from file, perfrom matrix inversion and save results."""
